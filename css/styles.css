@@ -135,3 +135,4 @@ article.entry{background:var(--card);border:1px solid var(--line);border-radius:
 @media (max-width:560px){.about-intro{grid-template-columns:1fr;justify-items:center;text-align:center}.about-photo{width:70%}}
 
 .shots-2{max-width:760px;margin-left:auto;margin-right:auto}
+.shots-2 img{aspect-ratio:auto;object-fit:contain}
