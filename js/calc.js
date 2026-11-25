@@ -13,7 +13,7 @@
     $("barFull").style.width="100%"; $("barFullT").textContent=fmt(plan);
     $("barPay").style.width=(pay/plan*100)+"%"; $("barPayT").textContent=fmt(pay);
   }
-  var SUB=[[15000,16000,17000],[10000,10000,10000]];
+  var SUB=[[15000,16000,17000],[15000,16000,17000]];
   function fill(){$("sub").value=SUB[+$("age").value][+$("birth").value];calc();}
   $("age").addEventListener("change",fill); $("birth").addEventListener("change",fill);
   document.querySelectorAll("#calc .seg button").forEach(function(b){
