@@ -76,10 +76,10 @@
 <section>
   <div class="wrap narrow">
     <h2>💰 收費</h2>
-    <p>準公共托育的收費受政府規範。托育補助加上準公共合作聯盟補助，家長每月可領 <b>NT$15,000</b>（依資格而定）。</p>
+    <p>準公共托育的收費受政府規範。政府補助分成「中央托育津貼」和「準公共合作聯盟（地方）補助」兩筆，依孩子的年齡與胎次而不同。</p>
     <div class="grid grid-2">
-      <div class="card center"><h3>日托月費</h3><p>每日 10 小時，每月（30 天）<br>定價 NT$19,000</p><p><b>領滿補助後，每月實付約 NT$4,000</b></p></div>
-      <div class="card center"><h3>全日托月費</h3><p>全日托 24 小時，每週 5 天<br>定價 NT$27,600</p><p><b>領滿補助後，每月實付約 NT$12,600</b></p></div>
+      <div class="card center"><h3>日托月費</h3><p>每日 10 小時，每月（30 天）<br>定價 NT$19,000</p><p><b>0～2 歲第一胎領滿補助後，每月實付約 NT$4,000</b></p></div>
+      <div class="card center"><h3>全日托月費</h3><p>全日托 24 小時，每週 5 天<br>定價 NT$27,600</p><p><b>0～2 歲第一胎領滿補助後，每月實付約 NT$12,600</b></p></div>
     </div>
     
     <div class="grid grid-2" style="margin-top:22px">
@@ -90,15 +90,34 @@
       <p>日托以<b>每日 10 小時</b>為原則。固定每天增加或減少托育時間，<b>每增加（減少）1 小時，每月加收（減收）1,000 元</b>。折合下來，每小時大約只要 40 多元。</p>
       <p style="margin-bottom:0">臨時、不固定的零星托育（零托），另有計費方式，歡迎與我聯絡詢問。</p></div>
     <p class="sub-cats" style="margin-top:14px">實際補助依家長資格而定，詳細內容以正式托育契約為準。</p>
+    <h3 style="margin-top:1.4em">政府補助（每月）</h3>
+    <div class="tablewrap"><table class="subtbl">
+      <thead><tr><th></th><th>第一胎</th><th>第二胎</th><th>第三胎以上</th></tr></thead>
+      <tbody>
+        <tr class="grp"><th colspan="4">0～2 歲</th></tr>
+        <tr><th>中央托育津貼</th><td>13,000</td><td>14,000</td><td>15,000</td></tr>
+        <tr><th>準公共合作聯盟（地方）</th><td>2,000</td><td>2,000</td><td>2,000</td></tr>
+        <tr class="tot"><th>合計</th><td>15,000</td><td>16,000</td><td>17,000</td></tr>
+        <tr class="grp"><th colspan="4">2～3 歲</th></tr>
+        <tr><th>中央托育津貼</th><td>8,000</td><td>8,000</td><td>8,000</td></tr>
+        <tr><th>準公共合作聯盟（地方）</th><td>2,000</td><td>2,000</td><td>2,000</td></tr>
+        <tr class="tot"><th>合計</th><td>10,000</td><td>10,000</td><td>10,000</td></tr>
+      </tbody>
+    </table></div>
+    <p class="sub-cats">補助金額以政府公告為準，實際是否符合資格，依家長申請結果而定。</p>
     <div class="calc card" id="calc">
       <h3>🧮 試算：我家每月與整段期間要付多少？</h3>
       <div class="seg" role="radiogroup" aria-label="托育方案">
         <button type="button" data-plan="19000" class="on" role="radio" aria-checked="true">日托 19,000</button>
         <button type="button" data-plan="27600" role="radio" aria-checked="false">全日托 27,600</button>
       </div>
+      <div class="sel">
+        <label>孩子年齡<select id="age"><option value="0">0～2 歲</option><option value="1">2～3 歲</option></select></label>
+        <label>胎次<select id="birth"><option value="0">第一胎</option><option value="1">第二胎</option><option value="2">第三胎以上</option></select></label>
+      </div>
       <label class="row" for="sub"><span>每月政府補助</span><output id="subOut">15,000</output></label>
-      <input type="range" id="sub" min="0" max="15000" step="500" value="15000" aria-label="每月補助金額">
-      <p class="sub-cats">實際補助依家長資格而定；拉到 0 就是完全沒有補助。</p>
+      <input type="range" id="sub" min="0" max="17000" step="500" value="15000" aria-label="每月補助金額">
+      <p class="sub-cats">選好年齡與胎次會自動帶入補助金額，也可以自己拉動滑桿調整；拉到 0 就是完全沒有補助。</p>
       <label class="row" for="mon"><span>預計托育月數</span><output id="monOut">12 個月</output></label>
       <input type="range" id="mon" min="1" max="36" step="1" value="12" aria-label="托育月數">
       <div class="bars">
