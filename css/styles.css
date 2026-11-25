@@ -129,3 +129,7 @@ article.entry{background:var(--card);border:1px solid var(--line);border-radius:
 .pod{flex-wrap:wrap}
 .pod .pod-img{width:110px;height:auto;border-radius:12px;flex:none;border:2px solid var(--yellow-300)}
 @media (max-width:520px){.pod .pod-img{width:100%}}
+
+.about-intro{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;margin-bottom:1.2em}
+.about-photo{width:200px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);border:3px solid var(--yellow-300);box-shadow:var(--shadow)}
+@media (max-width:560px){.about-intro{grid-template-columns:1fr;justify-items:center;text-align:center}.about-photo{width:70%}}
