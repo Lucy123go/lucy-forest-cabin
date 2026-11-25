@@ -136,3 +136,36 @@ article.entry{background:var(--card);border:1px solid var(--line);border-radius:
 
 .shots-2{max-width:760px;margin-left:auto;margin-right:auto}
 .shots-2 img{aspect-ratio:auto;object-fit:contain}
+
+/* 試算器 */
+.calc{margin-top:22px}
+.seg{display:flex;gap:8px;margin-bottom:14px}
+.seg button{flex:1;border:2px solid var(--green-500);background:var(--card);color:var(--green-700);padding:8px;border-radius:999px;font:inherit;cursor:pointer}
+.seg button.on{background:var(--green-700);color:var(--yellow-100);border-color:var(--green-700)}
+.calc .row{display:flex;justify-content:space-between;margin-top:10px}
+.calc output{font-weight:700;color:var(--green-700)}
+.calc input[type=range]{width:100%;accent-color:var(--green-500)}
+.bars{margin:14px 0}
+.bar{display:grid;grid-template-columns:4em 1fr 7.5em;gap:8px;align-items:center;margin:6px 0;font-size:.92rem}
+.bar i{display:block;background:var(--bg-soft);border-radius:999px;height:14px;overflow:hidden}
+.bar u{display:block;height:100%;background:var(--green-200);border-radius:999px;transition:width .25s}
+.bar u.pay{background:var(--yellow-500)}
+.bar em{font-style:normal;text-align:right}
+.result{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.result div{background:var(--yellow-100);border-radius:12px;padding:10px;text-align:center}
+.result span{display:block;font-size:.85rem;color:var(--brown)}
+.result strong{font-size:1.15rem;color:var(--green-700)}
+/* 請假退費 */
+.leave h3{margin:1.2em 0 .5em}
+.lcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 18px;margin-bottom:12px}
+.lcard h4{margin:0 0 6px;color:var(--green-700);font-family:var(--font-serif)}
+.lcard h4 small,.lt small{display:block;font-weight:400;color:var(--brown);font-size:.82rem;font-family:var(--font)}
+.lrow{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:8px 0;border-top:1px dashed var(--line)}
+.amt{font-weight:700;color:var(--green-700);white-space:nowrap}
+.amt.g{color:var(--brown)}
+.amt i{font-style:normal;font-weight:400;font-size:.82rem}
+.no{color:var(--brown);font-size:.92rem;text-align:right}
+.lfoot{margin:6px 0 0;font-size:.85rem;color:var(--brown)}
+.calc input[type=range]{-webkit-appearance:none;appearance:none;height:8px;border-radius:999px;background:var(--green-200);outline:none}
+.calc input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--yellow-500);border:3px solid var(--green-700);cursor:pointer}
+.calc input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--yellow-500);border:3px solid var(--green-700);cursor:pointer}
