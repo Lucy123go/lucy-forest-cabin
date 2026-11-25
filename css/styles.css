@@ -183,3 +183,9 @@ article.entry{background:var(--card);border:1px solid var(--line);border-radius:
 
 .notes{padding-left:1.4em;font-size:.95rem}
 .notes li{margin-bottom:.5em}
+/* 獎項照片：縮小並排 */
+.shots-2{display:flex;flex-wrap:nowrap;justify-content:center;align-items:flex-start;gap:14px;max-width:none;margin-top:18px}
+.shots-2 figure{flex:0 1 auto;min-width:0}
+.shots-2 img{height:230px;width:auto;max-width:100%;aspect-ratio:auto;object-fit:cover;display:block}
+.shots-2 figcaption{font-size:.8rem;max-width:230px;margin-left:auto;margin-right:auto}
+@media (max-width:560px){.shots-2 img{height:150px}.shots-2 figcaption{max-width:150px}}
