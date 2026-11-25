@@ -189,3 +189,11 @@ article.entry{background:var(--card);border:1px solid var(--line);border-radius:
 .shots-2 img{height:230px;width:auto;max-width:100%;aspect-ratio:auto;object-fit:cover;display:block}
 .shots-2 figcaption{font-size:.8rem;max-width:230px;margin-left:auto;margin-right:auto}
 @media (max-width:560px){.shots-2 img{height:150px}.shots-2 figcaption{max-width:150px}}
+
+.gain{color:var(--brown);font-size:.95rem;margin-top:-.3em}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.gal-4{grid-template-columns:repeat(4,1fr)}
+.gal figure{margin:0}
+.gal img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;border:3px solid var(--yellow-300);box-shadow:var(--shadow);display:block}
+.gal figcaption{text-align:center;font-size:.8rem;color:var(--brown);margin-top:6px}
+@media (max-width:640px){.gal,.gal-3,.gal-4{grid-template-columns:repeat(2,1fr)}}
