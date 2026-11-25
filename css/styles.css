@@ -122,9 +122,9 @@ article.entry{background:var(--card);border:1px solid var(--line);border-radius:
 .cat-card h3{margin-bottom:.3em}
 .tag.first{background:var(--green-500);color:var(--yellow-100);margin-left:6px}
 
-.shots{margin-top:26px;align-items:end}
+.shots{margin-top:26px;align-items:start}
 .shots figure{margin:0}
-.shots img{width:100%;height:auto;border-radius:var(--radius);border:3px solid var(--yellow-300);box-shadow:var(--shadow)}
+.shots img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 30%;border-radius:var(--radius);border:3px solid var(--yellow-300);box-shadow:var(--shadow)}
 .shots figcaption{text-align:center;font-size:.88rem;color:var(--brown);margin-top:8px}
 .pod{flex-wrap:wrap}
 .pod .pod-img{width:110px;height:auto;border-radius:12px;flex:none;border:2px solid var(--yellow-300)}
